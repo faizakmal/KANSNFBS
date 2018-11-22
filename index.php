@@ -24,7 +24,7 @@
     }
     if($_SESSION['last_session_request'] > time() - 2){
     // users will be redirected to this page if it makes requests faster than 2 seconds
-    header("location: http://kansnfbs.com/");
+    header("location: http://kans.nfbs.or.id/");
     exit;
 }
     
@@ -36,7 +36,7 @@
 	//You can get it from : https://console.developers.google.com/
 	$client_id = '986913153276-cabpoa6h8s1j44evquc7v27abpf4tif1.apps.googleusercontent.com';
 	$client_secret = 'h_CNIYbx4T5yfpHOxnxzXG5S';
-	$redirect_uri = 'http://kansnfbs.com/';
+	$redirect_uri = 'http://kans.nfbs.or.id/';
 
 	if (isset($_GET['logout'])) {
 	  unset($_SESSION['access_token']);
